@@ -84,7 +84,7 @@ namespace EfCoreSoftDeleteBug
 
             Console.WriteLine($"After .Remove() people count: {country.People.Count}");
 
-            dbContext.SaveChanges();
+            await dbContext.SaveChangesAsync();
 
             Console.WriteLine($"After .SaveChangesAsync() people count: {country.People.Count}");
 
